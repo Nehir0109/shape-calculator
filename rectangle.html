@@ -11,18 +11,18 @@
     <div class="container">
         <h1>Rectangle Calculator</h1>
         <img src="images/Rectangle.png" alt="Rectangle Image" class="rectangle">
-        <div class="calculator">
+        <form class="calculator">
             <label for="rect-length">Length:</label>
             <input type="number" id="rect-length" placeholder="Length">
             <label for="rect-width">Width:</label>
             <input type="number" id="rect-width" placeholder="Width">                           
-            <button onclick="calculateRectangle()">Calculate</button>
+            <button type="button" onclick="calculateRectangle()">Calculate</button>
             <p id="rect-result" class="result"></p>
             <p id="rect-result" class="invalid"></p>
             <a href="index.html">
-                <button class="back-button">Back to Main Page</button>
+                <button type="button" class="back-button">Back to Main Page</button>
             </a>
-        </div>
+        </form>
     </div>
 </body>
 </html>
