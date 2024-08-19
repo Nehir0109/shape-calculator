@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rectangle Calculator</h1>
+        <img src="images/Rectangle.png" alt="Rectangle Image" class="rectangle">
+        <div class="calculator">
+            <label for="rect-length">Length:</label>
+            <input type="number" id="rect-length" placeholder="Length">
+            <label for="rect-width">Width:</label>
+            <input type="number" id="rect-width" placeholder="Width">                           
+            <button onclick="calculateRectangle()">Calculate</button>
+            <p id="rect-result" class="result"></p>
+            <p id="rect-result" class="invalid"></p>
+            <a href="index.html">
+                <button class="back-button">Back to Main Page</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
