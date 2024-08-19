@@ -11,18 +11,18 @@
     <div class="container">
         <h1>Triangle Calculator</h1>
         <img src="images/Triangle.png" alt="Triangle Image" class="triangle">
-        <div class="calculator">
+        <form class="calculator">
             <label for="tri-base">Base:</label>
             <input type="number" id="tri-base" placeholder="Base">
             <label for="tri-height">Height:</label>
             <input type="number" id="tri-height" placeholder="Height">
-            <button onclick="calculateTriangle()">Calculate</button>
+            <button type="button" onclick="calculateTriangle()">Calculate</button>
             <p id="tri-result" class="result"></p>
             <p id="tri-result" class="invalid"></p>
             <a href="index.html">
-                <button class="back-button">Back to Main Page</button>
+                <button type="button" class="back-button">Back to Main Page</button>
             </a>
-        </div>
+        </form>
     </div>
 </body>
 </html>

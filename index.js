@@ -1,3 +1,18 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Find all the forms on the page
+    const forms = document.querySelectorAll('form');
+
+    forms.forEach(form => {
+        // Add an event listener for the 'Enter' key press
+        form.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Prevent the default form submission behavior
+                form.querySelector('button').click(); // Trigger the button click
+            }
+        });
+    });
+});
+
 function calculateRectangleArea(length, width) {
     return length * width;
 }
